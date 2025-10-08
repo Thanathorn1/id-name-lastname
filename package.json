@@ -6,13 +6,15 @@
   "author": "Thanathorn1 <thanatornfever@gmail.com>",
   "private": true,
   "type": "module",
+  "homepage": "https://thanathorn1.github.io/id-name-lastname/",
   "scripts": {
     "lint": "eslint -c ./eslint.config.js \"./src*/**/*.{js,cjs,mjs,vue}\"",
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
     "build": "quasar build",
-    "postinstall": "quasar prepare"
+    "postinstall": "quasar prepare",
+    "deploy": "gh-pages -d dist/spa"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
@@ -31,6 +33,7 @@
     "eslint": "^9.14.0",
     "eslint-plugin-vue": "^10.4.0",
     "eslint-webpack-plugin": "^4.2.0",
+    "gh-pages": "^6.3.0",
     "globals": "^16.4.0",
     "prettier": "^3.3.3",
     "vue-eslint-parser": "^10.2.0"
